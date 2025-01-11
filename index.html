@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/пицца-.png" type="image/png">
+  <link rel="stylesheet" href="index.css">
+  <title>NEXT PIZZA</title>
+</head>
+<body>
+
+<div class="container">
+
+  <header class="header" aria-label="header">
+    <div class="content header_title">
+      <div class="header_top">
+        <div>
+          <img src="assets/пицца-.png" class="header_pizza_img" alt="#" />
+        </div>
+        <div>
+          <h1>NEXT PIZZA</h1>
+          <p>вкусней уже некуда</p>
+        </div>
+      </div>
+      <label>
+        <img src="assets/img/icon.png" alt="#" />
+        <input type="text" class="header_input" placeholder="Поиск пиццы..." />
+      </label>
+      <div class="flex">
+        <button class="button header_button_enter">
+          <img src="assets/img/Group.png" alt="#" />
+          <span class="header_button_text">Войти</span>
+        </button>
+        <button class="button header_button_icon">
+          <img src="assets/img/iconfinder.svg" alt="#" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <hr class="divider" aria-label="divider" />
+
+  <main aria-label="main">
+    <section class="pizzas">
+      <div class="content">
+        <h2 class="all_pizzas">Все пиццы</h2>
+        <div class="js_content">
+          <div class="pizzas_blog">
+            <div class="pizzas_blog_top">
+              <div class="pizzas_all">Все</div>
+            </div>
+            <div class="pizzas_meat pizzas_none">Мясные</div>
+            <div class="pizzas_meat pizzas_none">Острые</div>
+            <div class="pizzas_meat pizzas_none">Сладкие</div>
+            <div class="pizzas_meat pizzas_d_none">Вегетарианские</div>
+            <div class="pizzas_meat pizzas_d_none">С курицей</div>
+            <div>
+              <span class="pizzas_meat">Ещё</span>
+              <img src="assets/img/Vector.png" class="pizzas_img_vector" alt="#" />
+            </div>
+          </div>
+          <div class="pizzas_blog pizzas_blog_right">
+            <img src="assets/img/Vector (1).png" alt="#" />
+            <div class="pizzas_meat">Сортировка:</div>
+            <div class="pizzas_all">рейтингу</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="filter">
+      <div class="filter_content">
+          <div class="filter_left">
+            <h3 class="filters">Фильтрация</h3>
+            <div class="flex filter_bottom">
+              <input type="checkbox" class="filter_checkbox" />
+              <span class="filter_text">Можно собирать</span>
+            </div>
+            <div class="flex">
+              <input type="checkbox" class="filter_checkbox" />
+              <span class="filter_text">Можно собирать</span>
+            </div>
+            <hr class="divider filter_divider" aria-label="divider" />
+            <h4 class="filter_price">Цена от и до:</h4>
+            <div class="flex">
+              <button class="button filter_bottom_price">
+                <span>0</span>
+                <img src="assets/img/₽.png" alt="#" />
+              </button>
+              <button class="button filter_bottom_price">
+                <span>1950</span>
+                <img src="assets/img/₽.png" alt="#" />
+              </button>
+            </div>
+            <hr class="divider filter_divider" aria-label="divider" />
+            <h4 class="filter_price">Ингредиенты:</h4>
+            <div class="flex filter_bottom">
+              <input type="checkbox" class="filter_checkbox" />
+              <span class="filter_text">Сырный соус</span>
+            </div>
+            <div class="flex filter_bottom">
+              <input type="checkbox" class="filter_checkbox" />
+              <span class="filter_text">Моцарелла</span>
+            </div>
+            <div class="flex filter_bottom">
+              <input type="checkbox" class="filter_checkbox" />
+              <span class="filter_text">Чеснок</span>
+            </div>
+            <div class="flex filter_bottom">
+              <input type="checkbox" class="filter_checkbox" />
+              <span class="filter_text">Солённые огурчики</span>
+            </div>
+            <div class="flex filter_bottom">
+              <input type="checkbox" class="filter_checkbox" />
+              <span class="filter_text">Красный лук</span>
+            </div>
+            <div class="flex filter_bottom">
+              <input type="checkbox" class="filter_checkbox" />
+              <span class="filter_text">Томаты</span>
+            </div>
+            <div class="filter_show_all">+ Показать всё</div>
+            <h4 class="filter_price">Тип теста:</h4>
+            <div class="filter_bottom flex">
+              <input type="radio" class="filter_radio" />
+              <span class="filter_text">Традиционное</span>
+            </div>
+            <div class="flex filter_thin">
+              <input type="radio" class="filter_radio" />
+              <span class="filter_text">Тонкое</span>
+            </div>
+            <button class="button filter_button_apply">
+              <span class="filter_apply">Применить</span>
+            </button>
+          </div>
+
+          <div class="filter_right_bottom">
+            <div class="filter_right">
+              <div>
+                <div class="filter_width">
+                  <div class="filter_bottom">
+                    <img src="assets/img/Group 67.png" alt="#" />
+                  </div>
+                  <h3 class="filters">Сырный цыпленок</h3>
+                  <div class="filter_chicken">Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, соус альфредо, чеснок</div>
+                  <div class="filter_between">
+                    <div class="filter_money">от <span class="money">395 ₽</span></div>
+                    <button class="button filter_button_collect">
+                      <img src="assets/img/Group (2).png" alt="#" />
+                      <span class="filter_collect">Собрать</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="filter_width">
+                  <div class="filter_bottom">
+                    <img src="assets/img/Group 67 (1).png" alt="#" />
+                  </div>
+                  <h3 class="filters">Диабло</h3>
+                  <div class="filter_chicken">Острая чоризо, острый перец халапеньо, соус барбекю, митболы, томаты, сладкий перец, красный лук, моцарелла</div>
+                  <div class="filter_between">
+                    <div class="filter_money">от <span class="money">449 ₽</span></div>
+                    <button class="button filter_button_collect">
+                      <img src="assets/img/Vector (2).png" alt="#" />
+                      <span class="filter_collect">Добавить</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="filter_width">
+                  <div class="filter_bottom">
+                    <img src="assets/img/Group 67 (2).png" alt="#" />
+                  </div>
+                  <h3 class="filters">Чизбургер-пицца</h3>
+                  <div class="filter_chicken">Мясной соус болоньезе, соус бургер, соленые огурчики, томаты, красный лук, моцарелла</div>
+                  <div class="filter_between">
+                    <div class="filter_money">от <span class="money">399 ₽</span></div>
+                    <div class="flex">
+                      <button class="button filter_button_rectangle rectangle">
+                        <img src="assets/img/Vector (3).png" alt="#" />
+                      </button>
+                      <div class="filter_number">1</div>
+                      <button class="button filter_button_rectangle rectangle">
+                        <img src="assets/img/Vector (2).png" alt="#" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="filter_width">
+                  <div class="filter_bottom">
+                    <img src="assets/img/Group 67.png" alt="#" />
+                  </div>
+                  <h3 class="filters">Сырный цыпленок</h3>
+                  <div class="filter_chicken">Цыпленок, моцарелла, сыры чеддер и пармезан, сырный соус, томаты, соус альфредо, чеснок</div>
+                  <div class="filter_between">
+                    <div class="filter_money">от <span class="money">395 ₽</span></div>
+                    <button class="button filter_button_collect">
+                      <img src="assets/img/Group (2).png" alt="#" />
+                      <span class="filter_collect">Собрать</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="filter_width">
+                  <div class="filter_bottom">
+                    <img src="assets/img/Group 67 (1).png" alt="#" />
+                  </div>
+                  <h3 class="filters">Диабло</h3>
+                  <div class="filter_chicken">Острая чоризо, острый перец халапеньо, соус барбекю, митболы, томаты, сладкий перец, красный лук, моцарелла</div>
+                  <div class="filter_between">
+                    <div class="filter_money">от <span class="money">449 ₽</span></div>
+                    <button class="button filter_button_collect">
+                      <img src="assets/img/Vector (2).png" alt="#" />
+                      <span class="filter_collect">Добавить</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="filter_width">
+                  <div class="filter_bottom">
+                    <img src="assets/img/Group 67 (2).png" alt="#" />
+                  </div>
+                  <h3 class="filters">Чизбургер-пицца</h3>
+                  <div class="filter_chicken">Мясной соус болоньезе, соус бургер, соленые огурчики, томаты, красный лук, моцарелла</div>
+                  <div class="filter_between">
+                    <div class="filter_money">от <span class="money">399 ₽</span></div>
+                    <div class="flex">
+                      <button class="button filter_button_rectangle rectangle">
+                        <img src="assets/img/Vector (3).png" alt="#" />
+                      </button>
+                      <div class="filter_number">2</div>
+                      <button class="button filter_button_rectangle rectangle">
+                        <img src="assets/img/Vector (2).png" alt="#" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="content flex">
+                <button class="button footer_button">
+                  <img src="assets/img/Vector (4).png" alt="#" />
+                </button>
+                <button class="button footer_button button_left">
+                  <span class="footer_one">1</span>
+                </button>
+                <button class="button footer_button button_left">
+                  <span class="footer_one">2</span>
+                </button>
+                <button class="button footer_button button_left">
+                  <span class="footer_one">3</span>
+                </button>
+                <button class="button filter_button_rectangle button_left">
+                  <img src="assets/img/Vector (5).png" alt="#" />
+                </button>
+                <div class="footer_text">10 из 65</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+    </section>
+
+  </main>
+
+
+</div>
+
+</body>
+</html>

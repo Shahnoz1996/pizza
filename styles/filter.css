@@ -1,0 +1,265 @@
+.filter {
+    display: flex;
+    padding: 36px 66px;
+}
+
+.filter_center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.filter_left {
+    width: min(244px, 100%);
+}
+
+.filters {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+input[type='checkbox'] {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.filter_checkbox {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    border-radius: 8px;
+}
+
+.filter_checkbox::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    background-color: var(--font-color);
+    border: 1px solid var(--font-color);
+}
+
+.filter_checkbox:checked::after {
+    content: '✓';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--font-color-orange);
+    border: 1px solid var(--font-color-orange);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-main);
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.filter_text {
+    font-size: 16px;
+    font-weight: 400;
+    align-self: center;
+    margin-left: 12px;
+}
+
+.filter_divider {
+    margin: 24px 0;
+}
+
+.filter_price {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.filter_bottom_price {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #F0F0F0;
+    background-color: var(--bg-main);
+    margin-right: 16px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.filter_show_all {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--font-color-orange);
+    margin-bottom: 42px;
+}
+
+input[type='radio'] {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.filter_radio {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    border-radius: 8px;
+}
+
+.filter_radio::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    background-color: var(--font-color);
+    border: 1px solid var(--font-color);
+}
+
+.filter_radio:checked::after {
+    content: " ";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: var(--bg-main);
+    border: 6px solid var(--font-color-orange);
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-main);
+    font-size: 16px;
+    border-radius: 50%;
+}
+
+.filter_thin {
+    margin-bottom: 32px;
+}
+
+.filter_button_apply {
+    width: min(244px, 100%);
+    height: 50px;
+    border-radius: 18px;
+    background-color: var(--font-color-orange);
+    border: 0;
+}
+
+.filter_apply {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--bg-main);
+}
+
+.filter_right_bottom {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 0 48px;
+}
+
+.filter_right {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1440px;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+.filter_width {
+    max-width: 285px;
+}
+
+.filter_chicken {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #B1B1B1;
+    width: min(285px, 100%);
+    margin-bottom: 12px;
+}
+
+.filter_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter_money {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.money {
+    font-weight: 700;
+}
+
+.filter_button_collect {
+    width: min(125px, 100%);
+    height: 42px;
+    border-radius: 15px;
+    border: 0;
+    background: #FFFAF4;
+}
+
+.filter_collect {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color-orange);
+    margin-left: 10px;
+}
+
+.filter_button_rectangle {
+    width: 42px;
+    height: 42px;
+    border-radius: 15px;
+    border: 1px solid var(--font-color-orange);
+    background-color: var(--bg-main);
+}
+
+.rectangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter_number {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 14px;
+}
+
+@media (max-width: 768px) {
+    .filter {
+        padding: 20px;
+    }
+
+    .filter_right {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .filter_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter_left {
+        margin-bottom: 20px;
+    }
+
+    .filter_right_bottom {
+        padding: 0;
+    }
+}
