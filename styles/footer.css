@@ -15,9 +15,11 @@
     font-size: 15px;
     font-weight: 600;
     color: #888888;
+
 }
 
 .footer_one:hover {
+    margin-bottom: 20px;
     color: var(--bg-main);
 }
 
